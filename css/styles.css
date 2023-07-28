@@ -18,7 +18,6 @@ body {
 	color: var(--black);
 	font-family: 'Proxima Nova', sans-serif;
 	font-weight: 400;
-	position: relative;
 
 }
 
@@ -316,19 +315,9 @@ header {
 	width: 729px;
 	height: 809px;
 	position: absolute;
-	top: 38px;
-	left: 1089px;
+	top: 80px;
+	left: 1118px;
 	z-index: -1;
-	opacity: 50%;
-}
-
-.magicpattern {
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: repeat;
-	background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M823.5 647.5q-28.5 147.5-176 97T369 728q-131 34-165.5-97t4-258Q246 246 373 191.5t220 34Q686 314 769 407t54.5 240.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%23FFDF00%22 d=%22M823.5 647.5q-28.5 147.5-176 97T369 728q-131 34-165.5-97t4-258Q246 246 373 191.5t220 34Q686 314 769 407t54.5 240.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
 
 .blob-image {
@@ -399,14 +388,20 @@ header {
 
 .helpdesk-star-icon {
 	width: 206px;
-	height: 33px;
+	height: 35px;
 }
 
 .our-company-group-img {
 	padding: 50px 0px;
 }
 
-/* ABOU-US */
+/* ABOUT-US */
+
+.about-us-container {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
 
 .about-us {
 	padding: 100px 0px;
@@ -418,23 +413,45 @@ header {
 	line-height: 1.25;
 }
 
-.about-us-prospects {
-	height: 759px;
+.about-us-prospects-list-item {
+	align-items: center;
 }
 
-.about-us-prospects-list-item {
+.about-us-prospects-list-item:nth-child(-n + 5) {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row-reverse;
+	gap: 10px;
+
+}
+
+.about-us-prospects-list-item:nth-child(n + 6) {
+	display: flex;
 	gap: 10px;
 }
 
-.prospects-list-item-text {
-	line-height: 1.25;
+.prospects-icon-container {
+	padding: 21px 20px 19px;
+	background-color: var(--yellow);
+	border-radius: 50%;
+}
+
+.prospects-icon {
+	width: 40px;
+	height: 40px;
+}
+
+.row-reverse {
+	display: flex;
+	flex-direction: row-reverse;
 }
 
 .prospects-list-item-bold-text {
 	font-weight: 700;
 	font-size: 20px;
+	line-height: 1.25;
+}
+
+.prospects-list-item-text {
 	line-height: 1.25;
 }
 
@@ -456,7 +473,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	background-color: var(--grey);
-	rotate: 90deg;
+	transform: rotate(90deg);
 	position: absolute;
 	top: 38px;
 	left: -28px;
@@ -577,6 +594,7 @@ header {
 
 .charity {
 	padding-bottom: 100px;
+	position: relative;
 }
 
 .charity-content {
@@ -596,24 +614,26 @@ header {
 
 .charity-img-1 {
 	position: absolute;
-	top: 4444px;
-	left: 968px;
+	top: 75px;
+	right: 539px;
 	border-radius: 5px;
+	z-index: 1;
 }
 
 .charity-img-2 {
 	position: absolute;
-	top: 4369px;
-	left: 1327px;
+	top: 0px;
+	right: 75px;
 	border-radius: 5px;
+	z-index: 0;
 }
 
 .charity-img-3 {
 	position: absolute;
-	top: 4556px;
-	left: 1367px;
+	top: 187px;
+	right: 178px;
+	z-index: 1;
 	border-radius: 5px;
-	padding-bottom: 50px;
 }
 
 .charity-ideas-list {
@@ -767,26 +787,6 @@ footer {
 .contact-us-social-medias {
 	display: flex;
 	gap: 45px;
-}
-
-.footer-facebook-icon {
-	width: 13px;
-	height: 22px;
-}
-
-.footer-instagram-icon {
-	width: 22px;
-	height: 22px;
-}
-
-.footer-google-plus-icon {
-	width: 29px;
-	height: 17px;
-}
-
-.footer-twitter-icon {
-	width: 22px;
-	height: 18px;
 }
 
 .our-address {

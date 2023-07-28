@@ -123,9 +123,11 @@
           <div class="circle-3"></div>
           <div class="circle-4"></div>
           <div class="blob">
-            <svg style="width: 500px; height: 500px">
-              <use href="./img/svg/Vector.svg"></use>
-            </svg>
+            <img
+              src="./img/hero-blob.png"
+              alt="hero blob"
+              class="blob-image-1"
+            />
           </div>
           <img src="./img/hero-img.png" alt="hero img" class="blob-image" />
         </div>
@@ -184,39 +186,75 @@
         </div>
       </section>
       <section class="about-us">
-        <div class="container">
+        <div class="container about-us-container">
           <h2 class="about-us-heading">У нас</h2>
-          <div class="about-us-prospects">
-            <ul class="about-us-prospects-list">
-              <li class="about-us-prospects-list-item">
-                <p class="prospects-list-item-bold-text">Зручний графік</p>
+          <ul class="about-us-prospects-list">
+            <li class="about-us-prospects-list-item">
+              <div class="prospects-icon-container">
+                <svg class="prospects-icon">
+                  <use href="./img/svg/symbol-defs.svg#time"></use>
+                </svg>
+              </div>
+              <div class="prospects-text" style="max-width: 505px">
+                <p class="prospects-list-item-bold-text row-reverse">
+                  Зручний графік
+                </p>
                 <p class="prospects-list-item-text">
                   Ми розуміємо, що кожна людина має унікальні потреби та
                   обставини, тому пропонуємо гнучкий режим роботи, який враховує
                   <span class="bold">індивідуальні вимоги</span> та дозволяє
                   пристосуватися до них.
                 </p>
-              </li>
-              <li class="about-us-prospects-list-item">
-                <p class="prospects-list-item-bold-text">Комфортний офіс</p>
+              </div>
+            </li>
+            <li class="about-us-prospects-list-item">
+              <div class="prospects-icon-container">
+                <svg class="prospects-icon">
+                  <use href="./img/svg/symbol-defs.svg#location"></use>
+                </svg>
+              </div>
+              <div class="prospects-text" style="max-width: 505px">
+                <p class="prospects-list-item-bold-text row-reverse">
+                  Комфортний офіс
+                </p>
                 <p class="prospects-list-item-text">
                   Для співробітників є комфортні
                   <span class="bold">робочі місця і зручні зони відпочинку</span
                   >, що сприяють розслабленню та відновленню енергії.
                   Використовуємо Starlink, тому завжди на звʼязку.
                 </p>
-              </li>
-              <li class="about-us-prospects-list-item">
-                <p class="prospects-list-item-bold-text">Швидкий розвиток</p>
+              </div>
+            </li>
+            <li class="about-us-prospects-list-item">
+              <div class="prospects-icon-container">
+                <svg class="prospects-icon">
+                  <use
+                    href="./img/svg/symbol-defs.svg#software-developer"
+                  ></use>
+                </svg>
+              </div>
+              <div class="prospects-text" style="max-width: 490px">
+                <p class="prospects-list-item-bold-text row-reverse">
+                  Швидкий розвиток
+                </p>
                 <p class="prospects-list-item-text">
                   За короткий проміжок часу ти
                   <span class="bold">стаєш повноцінним веброзробником</span> і
                   тобі не важливо що то буде за макет, ти зможеш реалізувати
                   все!
                 </p>
-              </li>
-              <li class="about-us-prospects-list-item">
-                <p class="prospects-list-item-bold-text">Можливості Drupal</p>
+              </div>
+            </li>
+            <li class="about-us-prospects-list-item">
+              <div class="prospects-icon-container">
+                <svg class="prospects-icon">
+                  <use href="./img/svg/symbol-defs.svg#atom"></use>
+                </svg>
+              </div>
+              <div class="prospects-text" style="max-width: 490px">
+                <p class="prospects-list-item-bold-text row-reverse">
+                  Можливості Drupal
+                </p>
                 <p class="prospects-list-item-text">
                   Завдяки Drupal ви можете створити
                   <span class="bold">будь-який тип веб-сайту</span>, від
@@ -224,9 +262,16 @@
                   <span class="bold">повноцінну професію</span>, що дозволить
                   вам працювати як в складі компанії, так і окремо як фрілансер.
                 </p>
-              </li>
-              <li class="about-us-prospects-list-item">
-                <p class="prospects-list-item-bold-text">
+              </div>
+            </li>
+            <li class="about-us-prospects-list-item">
+              <div class="prospects-icon-container">
+                <svg class="prospects-icon">
+                  <use href="./img/svg/symbol-defs.svg#meeting"></use>
+                </svg>
+              </div>
+              <div class="prospects-text" style="max-width: 490px">
+                <p class="prospects-list-item-bold-text row-reverse">
                   Навички та підтримка
                 </p>
                 <p class="prospects-list-item-text">
@@ -236,8 +281,15 @@
                   дамо можливість
                   <span class="bold">свої знання сповна реалізувати</span>.
                 </p>
-              </li>
-              <li class="about-us-prospects-list-item">
+              </div>
+            </li>
+            <li class="about-us-prospects-list-item">
+              <div class="prospects-icon-container">
+                <svg class="prospects-icon">
+                  <use href="./img/svg/symbol-defs.svg#accounts"></use>
+                </svg>
+              </div>
+              <div class="prospects-text" style="max-width: 505px">
                 <p class="prospects-list-item-bold-text">
                   Постійне зростання надходжень
                 </p>
@@ -246,8 +298,15 @@
                   <span class="bold">постійно зростали</span>. Наша мета —
                   допомогти вам досягти фінансового успіху.
                 </p>
-              </li>
-              <li class="about-us-prospects-list-item">
+              </div>
+            </li>
+            <li class="about-us-prospects-list-item">
+              <div class="prospects-icon-container">
+                <svg class="prospects-icon">
+                  <use href="./img/svg/symbol-defs.svg#client"></use>
+                </svg>
+              </div>
+              <div class="prospects-text" style="max-width: 505px">
                 <p class="prospects-list-item-bold-text">
                   Постійний потік клієнтів
                 </p>
@@ -255,8 +314,15 @@
                   У нас потік <span class="bold">нових замовлень</span>, тому
                   щоразу ти зможеш спробувати реалізувати щось нове
                 </p>
-              </li>
-              <li class="about-us-prospects-list-item">
+              </div>
+            </li>
+            <li class="about-us-prospects-list-item">
+              <div class="prospects-icon-container">
+                <svg class="prospects-icon">
+                  <use href="./img/svg/symbol-defs.svg#module"></use>
+                </svg>
+              </div>
+              <div class="prospects-text" style="max-width: 491px">
                 <p class="prospects-list-item-bold-text">Участь у стартапах</p>
                 <p class="prospects-list-item-text">
                   У нашій компанії, яка налічує багато стартапів, ми надаємо
@@ -265,8 +331,15 @@
                   Також ти розберешся в Drupal API та зможеш писати
                   <span class="bold">свої модулі</span>
                 </p>
-              </li>
-              <li class="about-us-prospects-list-item">
+              </div>
+            </li>
+            <li class="about-us-prospects-list-item">
+              <div class="prospects-icon-container">
+                <svg class="prospects-icon">
+                  <use href="./img/svg/symbol-defs.svg#workspace"></use>
+                </svg>
+              </div>
+              <div class="prospects-text" style="max-width: 505px">
                 <p class="prospects-list-item-bold-text">Сучасна техніка</p>
                 <p class="prospects-list-item-text">
                   Ми забезпечуємо всіх виконавців
@@ -275,8 +348,15 @@
                   працювати з надійним та потужним обладнанням, якісно
                   виконувати будь-які поточні завдання.
                 </p>
-              </li>
-              <li class="about-us-prospects-list-item">
+              </div>
+            </li>
+            <li class="about-us-prospects-list-item">
+              <div class="prospects-icon-container">
+                <svg class="prospects-icon">
+                  <use href="./img/svg/symbol-defs.svg#xbox"></use>
+                </svg>
+              </div>
+              <div class="prospects-text" style="max-width: 505px">
                 <p class="prospects-list-item-bold-text">
                   Відпочинок та розваги
                 </p>
@@ -286,9 +366,9 @@
                   <span class="bold">PlayStation та VR-окуляри</span>, тож під
                   час перерв або після робочого дня завжди можна розважитися.
                 </p>
-              </li>
-            </ul>
-          </div>
+              </div>
+            </li>
+          </ul>
           <div class="about-us-pictures">
             <img
               src="./img/gamers.jpg"
@@ -478,10 +558,10 @@
             </li>
           </ul>
         </div>
+        <img src="./img/charity-1.jpg" alt="" class="charity-img-1" />
+        <img src="./img/charity-2.jpg" alt="" class="charity-img-2" />
+        <img src="./img/charity-3.jpg" alt="" class="charity-img-3" />
       </section>
-      <img src="./img/charity-1.jpg" alt="" class="charity-img-1" />
-      <img src="./img/charity-2.jpg" alt="" class="charity-img-2" />
-      <img src="./img/charity-3.jpg" alt="" class="charity-img-3" />
     </main>
     <footer>
       <div class="container">
@@ -516,18 +596,18 @@
                 ><span class="contact-us-email-bold">order</span>@glyanec.net</a
               >
               <div class="contact-us-social-medias">
-                <svg class="footer-facebook-icon">
-                  <use href="./img/svg/symbol-defs.svg#footer-facebook"></use>
-                </svg>
-                <svg class="footer-instagram-icon">
-                  <use href="./img/svg/symbol-defs.svg#footer-instagram"></use>
-                </svg>
-                <svg class="footer-google-plus-icon">
-                  <use href="./img/svg/symbol-defs.svg#footer-google+"></use>
-                </svg>
-                <svg class="footer-twitter-icon">
-                  <use href="./img/svg/symbol-defs.svg#footer-twitter"></use>
-                </svg>
+                <a href="#">
+                  <img src="./img/facebook.png" alt="facebook icon" />
+                </a>
+                <a href="#">
+                  <img src="./img/instagram.png" alt="instagram icon" />
+                </a>
+                <a href="#">
+                  <img src="./img/Google+.png" alt="Google+ icon" />
+                </a>
+                <a href="#">
+                  <img src="./img/twitter.png" alt="twitter icon" />
+                </a>
               </div>
             </div>
           </div>
