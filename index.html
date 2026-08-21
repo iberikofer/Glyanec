@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,398 +14,462 @@
   </head>
   <body>
     <header>
-      <div class="container header-container">
+      <div class="header-container">
+        <a href="index.html" class="logo-link">
+          <img src="./assets/img/logo.png" alt="logo" class="logo-image" />
+        </a>
         <nav class="navigation-bar">
-          <a href="index.html"><img src="./img/logo.png" alt="logo" /></a>
-          <ul class="nav-list">
-            <li class="nav-list-item">
+          <ul class="nav-list desktop-nav-list">
+            <li class="nav-list-item nav-after">
               <a
-                href="#"
-                class="nav-list-item-link nav-after nav-right-padding"
+                href="#why-us"
+                class="nav-list-item-link nav-right-padding"
               >
                 Чому ми?
               </a>
             </li>
-            <li class="nav-list-item">
+            <li class="nav-list-item nav-after">
               <a
-                href="#"
-                class="nav-list-item-link nav-after nav-list-item-padding"
+                href="#partners"
+                class="nav-list-item-link nav-list-item-padding"
                 >Партнери</a
               >
             </li>
-            <li class="nav-list-item">
+            <li class="nav-list-item nav-after">
               <a
-                href="#"
-                class="nav-list-item-link nav-after nav-list-item-padding"
+                href="#charity"
+                class="nav-list-item-link nav-list-item-padding"
                 >Благодійність</a
               >
             </li>
-            <li class="nav-list-item">
+            <li class="nav-list-item nav-after">
               <a
-                href="#"
-                class="nav-list-item-link nav-after nav-list-item-padding"
+                href="#about-us"
+                class="nav-list-item-link nav-list-item-padding"
                 >Про нас</a
               >
             </li>
             <li class="nav-list-item">
-              <a href="#" class="nav-list-item-link nav-left-padding">Drupal</a>
+              <a href="#drupal" class="nav-list-item-link nav-left-padding">Drupal</a>
             </li>
           </ul>
         </nav>
         <div class="contacts">
           <ul class="social-media-links">
             <li>
-              <a href="#" class="sm-link facebook-link">
-                <svg class="facebook-icon">
-                  <use href="./img/svg/symbol-defs.svg#facebook"></use>
-                </svg>
+              <a href="#" class="sm-link facebook-link" aria-label="Facebook">
+                <img src="./assets/svg/facebook.svg" alt="Facebook" class="facebook-icon" />
               </a>
             </li>
             <li>
-              <a href="#" class="sm-link instagram-link">
-                <svg class="instagram-icon">
-                  <use href="./img/svg/symbol-defs.svg#instagram"></use>
-                </svg>
+              <a href="#" class="sm-link instagram-link" aria-label="Instagram">
+                <img src="./assets/svg/instagram.svg" alt="Instagram" class="instagram-icon" />
               </a>
             </li>
             <li>
-              <a href="#" class="sm-link viber-link">
-                <svg class="viber-icon">
-                  <use href="./img/svg/symbol-defs.svg#viber"></use>
-                </svg>
+              <a href="#" class="sm-link viber-link" aria-label="Viber">
+                <img src="./assets/svg/viber.svg" alt="Viber" class="viber-icon" />
               </a>
             </li>
           </ul>
-          <div class="contact-info">
-            <span class="contact-days">Пн-Пт з 10 до 18</span>
+          <div class="contact-info desktop-contact-info">
+            <span class="contact-days">Пн-Пт 10:00-18:00</span>
             <div class="contact-number">
               <a href="tel:0(800)759-759" class="contact-number-link"
                 >0 (800) 759-759</a
               >
-              <button class="contact-arrow-down-button">
-                <svg class="contact-arrow-down">
-                  <use
-                    href="./img/svg/symbol-defs.svg#contact-arrow-down"
-                  ></use>
-                </svg>
+              <button class="contact-arrow-down-button" aria-label="dropdown">
+                <img src="./assets/svg/contact-arrow-down.svg" alt="arrow" class="contact-arrow-down" />
               </button>
+            </div>
+          </div>
+          <div class="mobile-contact-wrapper" id="mobileContactWrapper">
+            <button class="mobile-contact-trigger" type="button" aria-label="Відкрити контакти" id="mobileContactTrigger">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H5.17L4 17.17V4H20V16Z" fill="#1A1A1A"/>
+                <path d="M7 9H17V11H7V9ZM7 6H17V8H7V6ZM7 12H14V14H7V12Z" fill="#1A1A1A"/>
+              </svg>
+            </button>
+            <div class="mobile-schedule">
+              <span class="mobile-schedule-days">Пн-Пт</span>
+              <span class="mobile-schedule-time">10:00-18:00</span>
+            </div>
+            <div class="mobile-contact-dropdown" id="mobileContactDropdown">
+              <ul class="mobile-contact-dropdown-list">
+                <li>
+                  <a href="#" class="sm-link facebook-link" aria-label="Facebook">
+                    <img src="./assets/svg/facebook.svg" alt="Facebook" class="facebook-icon" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sm-link instagram-link" aria-label="Instagram">
+                    <img src="./assets/svg/instagram.svg" alt="Instagram" class="instagram-icon" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sm-link viber-link" aria-label="Viber">
+                    <img src="./assets/svg/viber.svg" alt="Viber" class="viber-icon" />
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:0(800)759-759" class="sm-link mobile-phone-btn" aria-label="Зателефонувати">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" fill="#FFFFFF"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <button class="mobile-contact-close-btn" id="mobileContactClose" aria-label="Сховати меню">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 9L7 4L12 9" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
+      <div class="mobile-nav-wrapper">
+        <button class="mobile-nav-trigger" type="button" aria-label="Toggle navigation">
+          <span class="mobile-nav-trigger-text">Навігація</span>
+        </button>
+        <div class="mobile-nav-dropdown">
+          <ul class="mobile-nav-list">
+            <li><a href="#why-us" class="mobile-nav-link">Чому ми?</a></li>
+            <li><a href="#partners" class="mobile-nav-link">Партнери</a></li>
+            <li><a href="#charity" class="mobile-nav-link">Благодійність</a></li>
+            <li><a href="#about-us" class="mobile-nav-link">Про нас</a></li>
+            <li><a href="#drupal" class="mobile-nav-link">Drupal</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
+    <div class="page-wrapper">
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <h5 class="hero-pre-text">Вебстудія №1 з розробки сайтів</h5>
-          <h1 class="hero-heading">Приєднуйтесь до нашої IT-команди</h1>
-          <h5 class="hero-sub-text">
-            Відкрийте нові перспективи кар'єрного зростання, приєднавшись до
-            нашої інноваційної IT-команди, яка відкриває двері до безмежних
-            можливостей
-          </h5>
-          <button class="hero-button">Спробуй свої сили</button>
-          <img src="./img/pagination.png" alt="pagination" />
-          <div class="slide-down">
-            <span class="slide-down-text">Дізнатися більше</span>
-            <button class="slide-arrow-down-button">
-              <svg class="slide-arrow-down">
-                <use href="./img/svg/symbol-defs.svg#arrow"></use>
-              </svg>
-            </button>
+          <div class="hero-left">
+            <h5 class="hero-pre-text">Вебстудія №1 з розробки сайтів</h5>
+            <h1 class="hero-heading">Приєднуйтесь до нашої IT-команди</h1>
+            <h5 class="hero-sub-text">
+              Відкрийте нові перспективи кар'єрного зростання, приєднавшись до
+              нашої інноваційної IT-команди, яка відкриває двері до безмежних
+              можливостей
+            </h5>
+            <button class="hero-button">Спробуй свої сили</button>
+            <img src="./assets/img/pagination.png" alt="pagination" class="hero-pagination" />
+            <div class="slide-down">
+              <span class="slide-down-text">Дізнатися більше</span>
+              <button class="slide-arrow-down-button" aria-label="Scroll down">
+                <img src="./assets/svg/arrow.svg" alt="arrow" class="slide-arrow-down" />
+              </button>
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="hero-illustration">
+              <img
+                src="./assets/svg/hero-blob.svg"
+                alt="hero blob"
+                class="blob-image-1"
+              />
+              <img
+                src="./assets/img/hero-img.png"
+                alt="hero img"
+                class="blob-image"
+              />
+            </div>
           </div>
           <div class="circle-1"></div>
           <div class="circle-2"></div>
           <div class="circle-3"></div>
           <div class="circle-4"></div>
-          <div class="blob">
-            <img
-              src="./img/hero-blob.png"
-              alt="hero blob"
-              class="blob-image-1"
-            />
-          </div>
-          <img src="./img/hero-img.png" alt="hero img" class="blob-image" />
         </div>
       </section>
-      <section class="test-assignment">
+      <section class="test-assignment" id="why-us">
         <div class="container test-assignment-container">
-          <h3 class="test-assignment-heading">Перевірка тествого завдання</h3>
+          <h3 class="test-assignment-heading">Перевірка тестового завдання</h3>
           <div class="test-assignment-content">
-            <img src="./img/office.jpg" alt="office with 3 people" />
-            <img src="./img/text-with-slider.png" alt="text-with-slider" />
+            <div class="test-assignment-img-wrapper">
+              <img src="./assets/img/office.jpg" alt="office with 3 people" class="test-assignment-img" />
+            </div>
+            <div class="test-assignment-text-wrapper">
+              <div class="test-assignment-text">
+                <p>
+                  Ми цінуємо ваш час та зусилля, тому намагаємося якнайшвидше надати фідбек на ваші тестові роботи. Наша команда керівників та фахівців здійснює перевірку усіх робіт <span class="bold">ВРУЧНУ перевіряє всі роботи</span> без використання штучного інтелекту чи автоматизованих систем.
+                </p>
+                <p class="test-assignment-highlight">
+                  <span class="bold">На першому етапі вашу роботу перевірить керівник відповідного відділу або Анатолій Валерійович — керівник вебстудії Глянець.</span>
+                </p>
+                <p>
+                  Перевірку другого етапу, в залежності від посади, можуть здійснювати керівник відповідного відділу (наприклад, подання заявки на посаду верстальника).
+                </p>
+                <p>
+                  Ми розуміємо, як важливо для вас отримати швидку оцінку своїх <span class="bold">тестові завдання</span> навіть після завершення робочого дня. Ми поважаємо кожного потенційного кандидата і робить усе можливе, щоб об'єктивно оцінити рівень ваших здібностей та швидко повідомити результат.
+                </p>
+              </div>
+              <div class="static-scrollbar" aria-hidden="true">
+                <div class="static-scrollbar-track">
+                  <div class="static-scrollbar-thumb"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="our-company">
         <div class="container">
           <div class="our-company-content">
-            <div>
+            <div class="our-company-left">
               <h3 class="our-company-heading">
                 Найкраща компанія для роботи в IT
               </h3>
               <img
-                src="./img/our-company-text.png"
+                src="./assets/img/our-company-text.png"
                 alt="text our-company glyanec"
                 class="our-company-text"
               />
               <ul class="our-company-brands">
                 <li>
                   <a href="#" class="ua-logo-link">
-                    <img src="./img/ua-gromad.png" alt="ua-gromad" />
+                    <img src="./assets/img/ua-gromad.png" alt="ua-gromad" />
                   </a>
                 </li>
                 <li>
                   <a href="#" class="alternative-commerce-link">
-                    <svg class="alternative-commerce-icon">
-                      <use
-                        href="./img/svg/symbol-defs.svg#alternative-commerce"
-                      ></use>
-                    </svg>
+                    <img src="./assets/svg/alternative-commerce.svg" alt="Alternative Commerce" class="alternative-commerce-icon" />
                   </a>
                 </li>
                 <li>
                   <a href="#" class="helpdesk-star-link">
-                    <svg class="helpdesk-star-icon">
-                      <use href="./img/svg/symbol-defs.svg#helpdesk-star"></use>
-                    </svg>
+                    <img src="./assets/svg/helpdesk-star.svg" alt="Helpdesk Star" class="helpdesk-star-icon" />
                   </a>
                 </li>
               </ul>
             </div>
-            <img
-              src="./img/group-of-people.png"
-              alt="a group of people are conversating"
-              class="our-company-group-img"
-            />
+            <div class="our-company-right">
+              <img
+                src="./assets/img/group-of-people.png"
+                alt="a group of people are conversating"
+                class="our-company-group-img"
+              />
+            </div>
           </div>
         </div>
       </section>
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <div class="container about-us-container">
           <h2 class="about-us-heading">У нас</h2>
-          <ul class="about-us-prospects-list">
-            <li class="about-us-prospects-list-item">
-              <div class="prospects-icon-container">
-                <svg class="prospects-icon">
-                  <use href="./img/svg/symbol-defs.svg#time"></use>
-                </svg>
-              </div>
-              <div class="prospects-text" style="max-width: 505px">
-                <p class="prospects-list-item-bold-text row-reverse">
-                  Зручний графік
-                </p>
-                <p class="prospects-list-item-text">
-                  Ми розуміємо, що кожна людина має унікальні потреби та
-                  обставини, тому пропонуємо гнучкий режим роботи, який враховує
-                  <span class="bold">індивідуальні вимоги</span> та дозволяє
-                  пристосуватися до них.
-                </p>
-              </div>
-            </li>
-            <li class="about-us-prospects-list-item">
-              <div class="prospects-icon-container">
-                <svg class="prospects-icon">
-                  <use href="./img/svg/symbol-defs.svg#location"></use>
-                </svg>
-              </div>
-              <div class="prospects-text" style="max-width: 505px">
-                <p class="prospects-list-item-bold-text row-reverse">
-                  Комфортний офіс
-                </p>
-                <p class="prospects-list-item-text">
-                  Для співробітників є комфортні
-                  <span class="bold">робочі місця і зручні зони відпочинку</span
-                  >, що сприяють розслабленню та відновленню енергії.
-                  Використовуємо Starlink, тому завжди на звʼязку.
-                </p>
-              </div>
-            </li>
-            <li class="about-us-prospects-list-item">
-              <div class="prospects-icon-container">
-                <svg class="prospects-icon">
-                  <use
-                    href="./img/svg/symbol-defs.svg#software-developer"
-                  ></use>
-                </svg>
-              </div>
-              <div class="prospects-text" style="max-width: 490px">
-                <p class="prospects-list-item-bold-text row-reverse">
-                  Швидкий розвиток
-                </p>
-                <p class="prospects-list-item-text">
-                  За короткий проміжок часу ти
-                  <span class="bold">стаєш повноцінним веброзробником</span> і
-                  тобі не важливо що то буде за макет, ти зможеш реалізувати
-                  все!
-                </p>
-              </div>
-            </li>
-            <li class="about-us-prospects-list-item">
-              <div class="prospects-icon-container">
-                <svg class="prospects-icon">
-                  <use href="./img/svg/symbol-defs.svg#atom"></use>
-                </svg>
-              </div>
-              <div class="prospects-text" style="max-width: 490px">
-                <p class="prospects-list-item-bold-text row-reverse">
-                  Можливості Drupal
-                </p>
-                <p class="prospects-list-item-text">
-                  Завдяки Drupal ви можете створити
-                  <span class="bold">будь-який тип веб-сайту</span>, від
-                  лендінгу до соціальної мережі, і отримати
-                  <span class="bold">повноцінну професію</span>, що дозволить
-                  вам працювати як в складі компанії, так і окремо як фрілансер.
-                </p>
-              </div>
-            </li>
-            <li class="about-us-prospects-list-item">
-              <div class="prospects-icon-container">
-                <svg class="prospects-icon">
-                  <use href="./img/svg/symbol-defs.svg#meeting"></use>
-                </svg>
-              </div>
-              <div class="prospects-text" style="max-width: 490px">
-                <p class="prospects-list-item-bold-text row-reverse">
-                  Навички та підтримка
-                </p>
-                <p class="prospects-list-item-text">
-                  Працюючи у нас ти будеш працювати з препроцесорами,
-                  шаблонізаторами, різними бібліотеками, Doker, Git і з усім цим
-                  ми <span class="bold">тобі допоможемо розібратися</span> і
-                  дамо можливість
-                  <span class="bold">свої знання сповна реалізувати</span>.
-                </p>
-              </div>
-            </li>
-            <li class="about-us-prospects-list-item">
-              <div class="prospects-icon-container">
-                <svg class="prospects-icon">
-                  <use href="./img/svg/symbol-defs.svg#accounts"></use>
-                </svg>
-              </div>
-              <div class="prospects-text" style="max-width: 505px">
-                <p class="prospects-list-item-bold-text">
-                  Постійне зростання надходжень
-                </p>
-                <p class="prospects-list-item-text">
-                  У нашій компанії ми працюємо над тим, щоб надходження
-                  <span class="bold">постійно зростали</span>. Наша мета —
-                  допомогти вам досягти фінансового успіху.
-                </p>
-              </div>
-            </li>
-            <li class="about-us-prospects-list-item">
-              <div class="prospects-icon-container">
-                <svg class="prospects-icon">
-                  <use href="./img/svg/symbol-defs.svg#client"></use>
-                </svg>
-              </div>
-              <div class="prospects-text" style="max-width: 505px">
-                <p class="prospects-list-item-bold-text">
-                  Постійний потік клієнтів
-                </p>
-                <p class="prospects-list-item-text">
-                  У нас потік <span class="bold">нових замовлень</span>, тому
-                  щоразу ти зможеш спробувати реалізувати щось нове
-                </p>
-              </div>
-            </li>
-            <li class="about-us-prospects-list-item">
-              <div class="prospects-icon-container">
-                <svg class="prospects-icon">
-                  <use href="./img/svg/symbol-defs.svg#module"></use>
-                </svg>
-              </div>
-              <div class="prospects-text" style="max-width: 491px">
-                <p class="prospects-list-item-bold-text">Участь у стартапах</p>
-                <p class="prospects-list-item-text">
-                  У нашій компанії, яка налічує багато стартапів, ми надаємо
-                  учасникам розробки можливість
-                  <span class="bold">отримати відсоток</span> від прибутку.
-                  Також ти розберешся в Drupal API та зможеш писати
-                  <span class="bold">свої модулі</span>
-                </p>
-              </div>
-            </li>
-            <li class="about-us-prospects-list-item">
-              <div class="prospects-icon-container">
-                <svg class="prospects-icon">
-                  <use href="./img/svg/symbol-defs.svg#workspace"></use>
-                </svg>
-              </div>
-              <div class="prospects-text" style="max-width: 505px">
-                <p class="prospects-list-item-bold-text">Сучасна техніка</p>
-                <p class="prospects-list-item-text">
-                  Ми забезпечуємо всіх виконавців
-                  <span class="bold">сучасною технікою від Apple</span>. Кожен
-                  співробітник отримує свій власний MacBook, що дозволяє
-                  працювати з надійним та потужним обладнанням, якісно
-                  виконувати будь-які поточні завдання.
-                </p>
-              </div>
-            </li>
-            <li class="about-us-prospects-list-item">
-              <div class="prospects-icon-container">
-                <svg class="prospects-icon">
-                  <use href="./img/svg/symbol-defs.svg#xbox"></use>
-                </svg>
-              </div>
-              <div class="prospects-text" style="max-width: 505px">
-                <p class="prospects-list-item-bold-text">
-                  Відпочинок та розваги
-                </p>
-                <p class="prospects-list-item-text">
-                  Ми облаштували комфортні зони відпочинку на свіжому повітрі.
-                  Окрім цього, в офісі є
-                  <span class="bold">PlayStation та VR-окуляри</span>, тож під
-                  час перерв або після робочого дня завжди можна розважитися.
-                </p>
-              </div>
-            </li>
-          </ul>
+          <div class="about-us-main-layout">
+            <ul class="about-us-prospects-list about-us-left-list">
+              <li class="about-us-prospects-list-item">
+                <div class="prospects-icon-container">
+                  <img src="./assets/svg/time.svg" alt="time" class="prospects-icon" />
+                </div>
+                <div class="prospects-text">
+                  <p class="prospects-list-item-bold-text">
+                    Зручний графік
+                  </p>
+                  <p class="prospects-list-item-text">
+                    Ми розуміємо, що кожна людина має унікальні потреби та
+                    обставини, тому пропонуємо гнучкий режим роботи, який враховує
+                    <span class="bold">індивідуальні вимоги</span> та дозволяє
+                    пристосуватися до них.
+                  </p>
+                </div>
+              </li>
+              <li class="about-us-prospects-list-item">
+                <div class="prospects-icon-container">
+                  <img src="./assets/svg/location.svg" alt="location" class="prospects-icon" />
+                </div>
+                <div class="prospects-text">
+                  <p class="prospects-list-item-bold-text">
+                    Комфортний офіс
+                  </p>
+                  <p class="prospects-list-item-text">
+                    Для співробітників є комфортні
+                    <span class="bold">робочі місця і зручні зони відпочинку</span>, що сприяють розслабленню та відновленню енергії.
+                    Використовуємо Starlink, тому завжди на звʼязку.
+                  </p>
+                </div>
+              </li>
+              <li class="about-us-prospects-list-item">
+                <div class="prospects-icon-container">
+                  <img src="./assets/svg/software-developer.svg" alt="software developer" class="prospects-icon" />
+                </div>
+                <div class="prospects-text">
+                  <p class="prospects-list-item-bold-text">
+                    Швидкий розвиток
+                  </p>
+                  <p class="prospects-list-item-text">
+                    За короткий проміжок часу ти
+                    <span class="bold">стаєш повноцінним веброзробником</span> і
+                    тобі не важливо що то буде за макет, ти зможеш реалізувати
+                    все!
+                  </p>
+                </div>
+              </li>
+              <li class="about-us-prospects-list-item">
+                <div class="prospects-icon-container">
+                  <img src="./assets/svg/atom.svg" alt="atom" class="prospects-icon" />
+                </div>
+                <div class="prospects-text">
+                  <p class="prospects-list-item-bold-text">
+                    Можливості Drupal
+                  </p>
+                  <p class="prospects-list-item-text">
+                    Завдяки Drupal ви можете створити
+                    <span class="bold">будь-який тип веб-сайту</span>, від
+                    лендінгу до соціальної мережі, і отримати
+                    <span class="bold">повноцінну професію</span>, що дозволить
+                    вам працювати як в складі компанії, так і окремо як фрілансер.
+                  </p>
+                </div>
+              </li>
+              <li class="about-us-prospects-list-item">
+                <div class="prospects-icon-container">
+                  <img src="./assets/svg/meeting.svg" alt="meeting" class="prospects-icon" />
+                </div>
+                <div class="prospects-text">
+                  <p class="prospects-list-item-bold-text">
+                    Навички та підтримка
+                  </p>
+                  <p class="prospects-list-item-text">
+                    Працюючи у нас ти будеш працювати з препроцесорами,
+                    шаблонізаторами, різними бібліотеками, Doker, Git і з усім цим
+                    ми <span class="bold">тобі допоможемо розібратися</span> і
+                    дамо можливість
+                    <span class="bold">свої знання сповна реалізувати</span>.
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="about-us-center-graphic">
+              <img src="./assets/svg/about.svg" alt="About Glyanec" class="about-us-center-svg" />
+            </div>
+
+            <ul class="about-us-prospects-list about-us-right-list">
+              <li class="about-us-prospects-list-item">
+                <div class="prospects-icon-container">
+                  <img src="./assets/svg/accounts.svg" alt="accounts" class="prospects-icon" />
+                </div>
+                <div class="prospects-text">
+                  <p class="prospects-list-item-bold-text">
+                    Постійне зростання надходжень
+                  </p>
+                  <p class="prospects-list-item-text">
+                    У нашій компанії ми працюємо над тим, щоб надходження
+                    <span class="bold">постійно зростали</span>. Наша мета —
+                    допомогти вам досягти фінансового успіху.
+                  </p>
+                </div>
+              </li>
+              <li class="about-us-prospects-list-item">
+                <div class="prospects-icon-container">
+                  <img src="./assets/svg/client.svg" alt="client" class="prospects-icon" />
+                </div>
+                <div class="prospects-text">
+                  <p class="prospects-list-item-bold-text">
+                    Постійний потік клієнтів
+                  </p>
+                  <p class="prospects-list-item-text">
+                    У нас потік <span class="bold">нових замовлень</span>, тому
+                    щоразу ти зможеш спробувати реалізувати щось нове
+                  </p>
+                </div>
+              </li>
+              <li class="about-us-prospects-list-item">
+                <div class="prospects-icon-container">
+                  <img src="./assets/svg/module.svg" alt="module" class="prospects-icon" />
+                </div>
+                <div class="prospects-text">
+                  <p class="prospects-list-item-bold-text">Участь у стартапах</p>
+                  <p class="prospects-list-item-text">
+                    У нашій компанії, яка налічує багато стартапів, ми надаємо
+                    учасникам розробки можливість
+                    <span class="bold">отримати відсоток</span> від прибутку.
+                    Також ти розберешся в Drupal API та зможеш писати
+                    <span class="bold">свої модулі</span>
+                  </p>
+                </div>
+              </li>
+              <li class="about-us-prospects-list-item">
+                <div class="prospects-icon-container">
+                  <img src="./assets/svg/workspace.svg" alt="workspace" class="prospects-icon" />
+                </div>
+                <div class="prospects-text">
+                  <p class="prospects-list-item-bold-text">Сучасна техніка</p>
+                  <p class="prospects-list-item-text">
+                    Ми забезпечуємо всіх виконавців
+                    <span class="bold">сучасною технікою від Apple</span>. Кожен
+                    співробітник отримує свій власний MacBook, що дозволяє
+                    працювати з надійним та потужним обладнанням, якісно
+                    виконувати будь-які поточні завдання.
+                  </p>
+                </div>
+              </li>
+              <li class="about-us-prospects-list-item">
+                <div class="prospects-icon-container">
+                  <img src="./assets/svg/xbox.svg" alt="xbox" class="prospects-icon" />
+                </div>
+                <div class="prospects-text">
+                  <p class="prospects-list-item-bold-text">
+                    Відпочинок та розваги
+                  </p>
+                  <p class="prospects-list-item-text">
+                    Ми облаштували комфортні зони відпочинку на свіжому повітрі.
+                    Окрім цього, в офісі є
+                    <span class="bold">PlayStation та VR-окуляри</span>, тож під
+                    час перерв або після робочого дня завжди можна розважитися.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
           <div class="about-us-pictures">
-            <img
-              src="./img/gamers.jpg"
-              alt="two people are playing game console"
-            />
-            <img src="./img/workerks.jpg" alt="people are working" />
-            <img src="./img/game-setup.jpg" alt="gaming setup" />
-            <img src="./img/workerks-2.jpg" alt="two people are working" />
-            <button class="arrow-previous-button">
-              <svg class="arrow-previous-icon">
-                <use href="./img/svg/symbol-defs.svg#arrow"></use>
+            <button class="arrow-previous-button" aria-label="Previous image">
+              <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 7H1M1 7L7 1M1 7L7 13" stroke="#333333" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
-            <button class="arrow-next-button">
-              <svg class="arrow-next-icon">
-                <use href="./img/svg/symbol-defs.svg#arrow"></use>
+            <div class="about-us-pictures-slider">
+              <img
+                src="./assets/img/gamers.jpg"
+                alt="two people are playing game console"
+              />
+              <img src="./assets/img/workerks.jpg" alt="people are working" />
+              <img src="./assets/img/game-setup.jpg" alt="gaming setup" />
+              <img src="./assets/img/workerks-2.jpg" alt="two people are working" />
+            </div>
+            <button class="arrow-next-button" aria-label="Next image">
+              <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 7H17M17 7L11 1M17 7L11 13" stroke="#333333" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
           </div>
         </div>
       </section>
-      <section class="contribution">
+      <section class="contribution" id="drupal">
         <div class="container">
           <h3 class="contribution-heading">Наш вклад в Drupal</h3>
           <div class="contribution-img">
             <ul class="contribution-list">
               <li>
                 <img
-                  src="./img/ukraine-community.png"
+                  src="./assets/img/ukraine-community.png"
                   alt="info about contribution to drupal"
                 />
               </li>
               <li>
                 <img
-                  src="./img/open-souce.png"
+                  src="./assets/img/open-souce.png"
                   alt="info about contribution to open source"
                 />
               </li>
               <li>
                 <img
-                  src="./img/e-commerce-platform.png"
+                  src="./assets/img/e-commerce-platform.png"
                   alt="info about contribution to free e-commerce platform"
                 />
               </li>
@@ -413,83 +477,77 @@
           </div>
         </div>
       </section>
-      <section class="cooperation-companies">
+      <section class="cooperation-companies" id="partners">
         <div class="container">
           <h3 class="cooperation-heading">З нами працюють:</h3>
-          <ul class="cooperation-companies-list">
-            <li>
-              <a href="https://www.toyota.com" target="_blank">
-                <svg class="toyota-icon">
-                  <use href="./img/svg/symbol-defs.svg#toyota"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.bravoairways.com.ua/en" target="_blank">
-                <svg class="bravo-airlines-icon">
-                  <use href="./img/svg/symbol-defs.svg#bravo-airlines"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://apteka.net.ua" target="_blank">
-                <img
-                  src="./img/apteka.png"
-                  alt="apteka bahzaemo zdorov'ya logo"
-                  width="232"
-                  height="44"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="https://gemix.ua" target="_blank">
-                <svg class="gemix-logo">
-                  <use href="./img/svg/symbol-defs.svg#gemix"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.csdlab.ua" target="_blank">
-                <svg class="csd-logo">
-                  <use href="./img/svg/symbol-defs.svg#csd"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://momentum.in.ua" target="_blank">
-                <svg class="momentum-logo">
-                  <use href="./img/svg/symbol-defs.svg#momentum"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <button
-            class="arrow-previous-button cooperation-companies-previous-button"
-          >
-            <svg class="arrow-previous-icon">
-              <use href="./img/svg/symbol-defs.svg#arrow"></use>
-            </svg>
-          </button>
-          <button class="arrow-next-button cooperation-companies-next-button">
-            <svg class="arrow-next-icon">
-              <use href="./img/svg/symbol-defs.svg#arrow"></use>
-            </svg>
-          </button>
+          <div class="cooperation-companies-slider-wrapper">
+            <ul class="cooperation-companies-list">
+              <li>
+                <a href="https://www.toyota.com" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/svg/toyota.svg" alt="toyota" class="toyota-icon" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.bravoairways.com.ua/en" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/svg/bravo-airlines.svg" alt="bravo airlines" class="bravo-airlines-icon" />
+                </a>
+              </li>
+              <li>
+                <a href="https://apteka.net.ua" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="./assets/img/apteka.png"
+                    alt="apteka bahzaemo zdorov'ya logo"
+                    width="232"
+                    height="44"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://gemix.ua" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/svg/gemix.svg" alt="gemix" class="gemix-logo" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.csdlab.ua" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/svg/csd.svg" alt="csd lab" class="csd-logo" />
+                </a>
+              </li>
+              <li>
+                <a href="https://momentum.in.ua" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/svg/momentum.svg" alt="momentum" class="momentum-logo" />
+                </a>
+              </li>
+            </ul>
+            <button
+              class="arrow-previous-button cooperation-companies-previous-button"
+              aria-label="Previous partner"
+            >
+              <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 7H1M1 7L7 1M1 7L7 13" stroke="#333333" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button
+              class="arrow-next-button cooperation-companies-next-button"
+              aria-label="Next partner"
+            >
+              <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 7H17M17 7L11 1M17 7L11 13" stroke="#333333" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
-      <section class="charity">
+      <section class="charity" id="charity">
         <div class="container">
           <h3 class="charity-heading">Благодійність</h3>
           <img
-            src="./img/charity-text.png"
+            src="./assets/img/charity-text.png"
             alt="charity-text"
             class="charity-text-img"
           />
           <ul class="charity-ideas-list">
             <li class="charity-idea trident">
-              <svg class="charity-idea-icon">
-                <use href="./img/svg/symbol-defs.svg#trident"></use>
-              </svg>
+              <img src="./assets/svg/trident.svg" alt="trident" class="charity-idea-icon" />
               <h6 class="charity-idea-heading">Допомога ЗСУ</h6>
               <p class="charity-idea-text">
                 Наші герої потребують уваги та підтримки, тому будь-яка
@@ -497,9 +555,7 @@
               </p>
             </li>
             <li class="charity-idea punkt-nezlamnosti">
-              <svg class="charity-idea-icon">
-                <use href="./img/svg/symbol-defs.svg#punkt-nezlamnosti"></use>
-              </svg>
+              <img src="./assets/svg/punkt-nezlamnosti.svg" alt="punkt nezlamnosti" class="charity-idea-icon" />
               <h6 class="charity-idea-heading">Пункт незламності</h6>
               <p class="charity-idea-text">
                 Восени 2022 року, коли країна перебувала під загрозою блекауту,
@@ -507,9 +563,7 @@
               </p>
             </li>
             <li class="charity-idea computer-lab">
-              <svg class="charity-idea-icon">
-                <use href="./img/svg/symbol-defs.svg#computer-lab"></use>
-              </svg>
+              <img src="./assets/svg/computer-lab.svg" alt="computer lab" class="charity-idea-icon" />
               <h6 class="charity-idea-heading">Компʼютерний клас</h6>
               <p class="charity-idea-text">
                 Здійснили повне оновлення комп'ютерного класу у КЗ "Зарванецька
@@ -518,9 +572,7 @@
               </p>
             </li>
             <li class="charity-idea paw">
-              <svg class="charity-idea-icon">
-                <use href="./img/svg/symbol-defs.svg#paw"></use>
-              </svg>
+              <img src="./assets/svg/paw.svg" alt="paw" class="charity-idea-icon" />
               <h6 class="charity-idea-heading">
                 Стерилізація і вакцинація місцевих тварин
               </h6>
@@ -530,9 +582,7 @@
               </p>
             </li>
             <li class="charity-idea mop">
-              <svg class="charity-idea-icon">
-                <use href="./img/svg/symbol-defs.svg#mop"></use>
-              </svg>
+              <img src="./assets/svg/mop.svg" alt="mop" class="charity-idea-icon" />
               <h6 class="charity-idea-heading">Прибирання “Чижової посадки”</h6>
               <p class="charity-idea-text">
                 Минулого року була проведена екологічна акція прибирання
@@ -542,9 +592,7 @@
               </p>
             </li>
             <li class="charity-idea additional-projects">
-              <svg class="charity-idea-icon">
-                <use href="./img/svg/symbol-defs.svg#additional-projects"></use>
-              </svg>
+              <img src="./assets/svg/additional-projects.svg" alt="additional projects" class="charity-idea-icon" />
               <h6 class="charity-idea-heading">Додаткові проєкти</h6>
               <p class="charity-idea-text">
                 Одним із наступних проєктів, який вже невдовзі буде реалізовано
@@ -554,15 +602,16 @@
             </li>
           </ul>
         </div>
-        <img src="./img/charity-1.jpg" alt="" class="charity-img-1" />
-        <img src="./img/charity-2.jpg" alt="" class="charity-img-2" />
-        <img src="./img/charity-3.jpg" alt="" class="charity-img-3" />
+        <img src="./assets/img/charity-1.jpg" alt="charity 1" class="charity-img-1" />
+        <img src="./assets/img/charity-2.jpg" alt="charity 2" class="charity-img-2" />
+        <img src="./assets/img/charity-3.jpg" alt="charity 3" class="charity-img-3" />
       </section>
     </main>
+    </div>
     <footer>
-      <div class="container">
+      <div class="footer-container">
         <div class="footer-company-info">
-          <img src="./img//dark-logo.png" alt="darklogo" class="footer-logo" />
+          <img src="./assets/img/dark-logo.png" alt="darklogo" class="footer-logo" />
           <p class="footer-company-info-text">
             Компанія працює з 2008 року під брендом Глянець. Ми використовуємо
             для роботи лише власну нерухомість, техніку та сервери. Виконуємо
@@ -592,17 +641,17 @@
                 ><span class="contact-us-email-bold">order</span>@glyanec.net</a
               >
               <div class="contact-us-social-medias">
-                <a href="#">
-                  <img src="./img/facebook.png" alt="facebook icon" />
+                <a href="#" aria-label="Facebook">
+                  <img src="./assets/img/facebook.png" alt="facebook icon" />
                 </a>
-                <a href="#">
-                  <img src="./img/instagram.png" alt="instagram icon" />
+                <a href="#" aria-label="Instagram">
+                  <img src="./assets/img/instagram.png" alt="instagram icon" />
                 </a>
-                <a href="#">
-                  <img src="./img/Google+.png" alt="Google+ icon" />
+                <a href="#" aria-label="Google Plus">
+                  <img src="./assets/img/google-plus.png" alt="google-plus icon" />
                 </a>
-                <a href="#">
-                  <img src="./img/twitter.png" alt="twitter icon" />
+                <a href="#" aria-label="Twitter">
+                  <img src="./assets/img/twitter.png" alt="twitter icon" />
                 </a>
               </div>
             </div>
@@ -632,23 +681,15 @@
             <ul class="our-startups-list">
               <li class="our-startups-list-item footer-two-logo-one-row">
                 <a href="#">
-                  <img src="./img/ua-gromad.png" alt="ukraina gromad - logo" />
+                  <img src="./assets/img/ua-gromad.png" alt="ukraina gromad - logo" />
                 </a>
                 <a href="#" class="alternative-commerce-link">
-                  <svg class="alternative-commerce-icon">
-                    <use
-                      href="./img/svg/symbol-defs.svg#footer-alternative-commerce"
-                    ></use>
-                  </svg>
+                  <img src="./assets/svg/footer-alternative-commerce.svg" alt="Alternative Commerce" class="alternative-commerce-icon" />
                 </a>
               </li>
               <li class="our-startups-list-item">
                 <a href="#" class="helpdesk-star-link">
-                  <svg class="helpdesk-star-icon">
-                    <use
-                      href="./img/svg/symbol-defs.svg#footer-helpdesk-star"
-                    ></use>
-                  </svg>
+                  <img src="./assets/svg/footer-helpdesk-star.svg" alt="Helpdesk Star" class="helpdesk-star-icon" />
                 </a>
               </li>
             </ul>
@@ -656,5 +697,65 @@
         </div>
       </div>
     </footer>
+    <script>
+      // Smooth responsive sync during DevTools resizing
+      let resizeTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          window.dispatchEvent(new Event('scroll'));
+        }, 60);
+      }, { passive: true });
+
+      // Mobile nav click toggle for touch devices
+      const mobileNavWrapper = document.querySelector('.mobile-nav-wrapper');
+      const mobileNavTrigger = document.querySelector('.mobile-nav-trigger');
+      if (mobileNavTrigger && mobileNavWrapper) {
+        mobileNavTrigger.addEventListener('click', (e) => {
+          e.stopPropagation();
+          mobileNavWrapper.classList.toggle('active');
+        });
+        document.addEventListener('click', (e) => {
+          if (!mobileNavWrapper.contains(e.target)) {
+            mobileNavWrapper.classList.remove('active');
+          }
+        });
+      }
+
+      // Mobile contact dropdown toggle
+      const mobileContactWrapper = document.querySelector('.mobile-contact-wrapper');
+      const mobileContactTrigger = document.querySelector('.mobile-contact-trigger');
+      const mobileContactClose = document.getElementById('mobileContactClose');
+      
+      if (mobileContactWrapper && mobileContactTrigger) {
+        // Toggle on trigger click
+        mobileContactTrigger.addEventListener('click', (e) => {
+          e.stopPropagation();
+          mobileContactWrapper.classList.toggle('active');
+        });
+        
+        // Close on up-arrow button click
+        if (mobileContactClose) {
+          mobileContactClose.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileContactWrapper.classList.remove('active');
+          });
+        }
+        
+        // Close on click outside
+        document.addEventListener('click', (e) => {
+          if (!mobileContactWrapper.contains(e.target)) {
+            mobileContactWrapper.classList.remove('active');
+          }
+        });
+
+        // Close on scroll
+        window.addEventListener('scroll', () => {
+          if (mobileContactWrapper.classList.contains('active')) {
+            mobileContactWrapper.classList.remove('active');
+          }
+        }, { passive: true });
+      }
+    </script>
   </body>
 </html>
