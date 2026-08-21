@@ -647,10 +647,31 @@ header {
 	align-items: center;
 }
 
-.our-company-text {
-	max-width: 100%;
-	height: auto;
-	margin-bottom: 28px;
+.our-company-description {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	margin-bottom: 32px;
+}
+
+.our-company-subtitle {
+	color: var(--black);
+	font-weight: 700;
+	font-size: clamp(17px, 1.4vw, 20px);
+	line-height: 1.35;
+}
+
+.our-company-paragraph {
+	color: #333333;
+	font-size: clamp(14px, 1.1vw, 16px);
+	line-height: 1.5;
+}
+
+.our-company-highlight {
+	color: var(--black);
+	font-weight: 700;
+	font-size: clamp(15px, 1.2vw, 17px);
+	line-height: 1.4;
 }
 
 .alternative-commerce-icon {
@@ -1194,11 +1215,11 @@ footer {
 	position: relative;
 	z-index: 2;
 	display: flex;
-	flex: 0 0 380px;
+	flex: 0 0 max(380px, calc(50vw - 207px));
 	flex-direction: column;
 	justify-content: space-between;
-	width: 380px;
-	min-width: 380px;
+	width: max(380px, calc(50vw - 207px));
+	min-width: max(380px, calc(50vw - 207px));
 	padding: 60px 40px;
 	background-color: var(--yellow);
 }
