@@ -17,6 +17,14 @@ Because of these limitations:
 - **✨ Custom Enhancements:** I took the liberty to add various features, animations, and structural changes that were not present in the original mockup to create a more polished, modern, and engaging user experience.
 
 ## 💻 Technologies Used
-- 🏗️ **HTML5:** Semantic structure and accessibility best practices.
-- 💅 **CSS3:** Flexbox, CSS Variables, Media Queries, and complex CSS transitions/animations (properties meticulously sorted according to `rational-order` best practices).
-- ⚡ **Vanilla JavaScript:** Minimal footprint, used strictly for mobile navigation toggles, dropdowns, and interactive UI logic.
+- 🏗️ **HTML5:** Semantic structure, accessibility best practices (ARIA attributes, semantic tags), and responsive meta configuration.
+- 💅 **CSS3:**
+  - **Layouts:** Advanced **CSS Grid** (multi-column grids, grid tracks, spanning) and **Flexbox** for responsive alignments.
+  - **Modern CSS Features:** CSS Custom Properties (Variables), linear gradients, and fluid sizing via `clamp()`, `calc()`, and `minmax()`.
+  - **Responsive Web Design:** Mobile-first approach, custom media queries across mobile, tablet, laptop, and Full HD (1920px) desktop breakpoints.
+  - **Transitions & Micro-interactions:** Smooth transforms (`scale`, `translate`), cubic-bezier easings, and interactive hover states.
+  - **Architecture:** Styles meticulously organized following `rational-order` best practices.
+- 📐 **SVG / Vector Graphics:** Scalable vector graphics and optimized SVG sprite composition for pixel-perfect rendering across all screen densities.
+- ⚡ **Vanilla JavaScript (ES6+):** Zero external libraries/frameworks; minimal, performant event listeners (with `{ passive: true }`), debounced resize handlers, click-outside detection, and DOM state management for mobile navigation and interactive dropdowns.
+- 🔤 **Web Typography:** Google Fonts (`Lato`) with resource preconnection (`preconnect`) and `Proxima Nova` custom font integration.
+- 🌿 **Git:** Version control and commit history management.
