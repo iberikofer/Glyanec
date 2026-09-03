@@ -4,7 +4,7 @@
 
 .our-company {
 	padding: 60px 0;
-	background-color: var(--yellow);
+	background: linear-gradient(114deg, #FFDF00 0%, #FFB800 100%);
 }
 
 .our-company-content {
@@ -48,21 +48,21 @@
 .our-company-subtitle {
 	color: var(--black);
 	font-weight: 700;
-	font-size: clamp(17px, 1.4vw, 20px);
+	font-size: clamp(20px, 1.8vw, 26px);
 	line-height: 1.35;
 }
 
 .our-company-paragraph {
 	color: #333333;
-	font-size: clamp(14px, 1.1vw, 16px);
-	line-height: 1.5;
+	font-size: clamp(16px, 1.3vw, 20px);
+	line-height: 1.55;
 }
 
 .our-company-highlight {
 	color: var(--black);
 	font-weight: 700;
-	font-size: clamp(15px, 1.2vw, 17px);
-	line-height: 1.4;
+	font-size: clamp(16px, 1.3vw, 20px);
+	line-height: 1.45;
 }
 
 .alternative-commerce-icon {

@@ -22,7 +22,7 @@ body {
 	color: var(--black);
 	font-weight: 400;
 	font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-	background-color: #FFFFFF;
+	background-color: var(--site-bg, #FFFEFB);
 }
 
 img {
