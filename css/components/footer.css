@@ -127,15 +127,20 @@ footer {
 
 .contact-us-social-medias {
 	display: flex;
-	gap: 45px;
+	flex-wrap: nowrap;
+	gap: clamp(10px, 1.25vw, 24px);
 	align-items: center;
-	margin-top: 14px;
+	max-width: 100%;
+	margin-top: 16px;
 }
 
 .contact-us-social-medias a {
 	display: inline-flex;
+	flex-shrink: 0;
 	align-items: center;
 	justify-content: center;
+	min-width: 26px;
+	min-height: 26px;
 	cursor: pointer;
 	transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
 }
@@ -154,8 +159,10 @@ footer {
 
 .contact-us-social-medias img {
 	display: block;
+	flex-shrink: 0;
 	width: auto;
-	height: 20px;
+	height: 26px;
+	min-height: 24px;
 	object-fit: contain;
 }
 

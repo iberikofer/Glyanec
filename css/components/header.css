@@ -227,8 +227,8 @@ header {
    HEADER RESPONSIVE
    ========================================================================== */
 
-/* Tablets & Small Laptops (<= 1200px) */
-@media (max-width: 1200px) {
+/* Screens below 1920px (< 1920px) */
+@media (max-width: 1919.98px) {
 	.navigation-bar {
 		display: none;
 	}
@@ -240,7 +240,7 @@ header {
 		gap: 24px;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0 clamp(16px, 3vw, 30px);
+		padding: 0 clamp(20px, 4vw, 60px);
 	}
 
 	.logo-link {
@@ -506,14 +506,14 @@ header {
 	}
 }
 
-/* Tablets & Mobile (<= 768px) */
-@media (max-width: 768px) {
+/* Screens below 1024px (< 1024px) */
+@media (max-width: 1023.98px) {
 	.header-container {
 		flex-direction: row;
 		gap: 10px;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0 16px;
+		padding: 0 clamp(16px, 2.5vw, 24px);
 	}
 
 	.logo-link {
@@ -522,7 +522,7 @@ header {
 	}
 
 	.logo-image {
-		width: clamp(120px, 30vw, 145px);
+		width: clamp(120px, 20vw, 155px);
 		height: auto;
 	}
 
@@ -535,7 +535,6 @@ header {
 
 	.social-media-links {
 		display: none !important;
-		gap: 6px;
 	}
 
 	.desktop-contact-info {
