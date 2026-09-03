@@ -195,13 +195,19 @@ header {
 }
 
 .contact-number-link {
+	display: inline-block;
 	color: var(--black);
 	text-decoration: none;
-	transition: color 0.2s ease;
+	transition: color 0.2s ease, transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-number-link:hover {
-	color: #000000;
+	color: #CCA000;
+	transform: scale(1.03);
+}
+
+.contact-number-link:active {
+	transform: scale(0.98);
 }
 
 .contact-arrow-down-button {
@@ -210,13 +216,30 @@ header {
 	justify-content: center;
 	width: 22px;
 	height: 22px;
+	padding: 0;
 	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-arrow-down-button:hover {
+	transform: translateY(3px) scale(1.2);
+}
+
+.contact-arrow-down-button:active {
+	transform: translateY(1px) scale(0.95);
 }
 
 .contact-arrow-down {
 	width: 13px;
 	height: 8px;
 	object-fit: contain;
+	transition: filter 0.2s ease;
+}
+
+.contact-arrow-down-button:hover .contact-arrow-down {
+	filter: brightness(0) saturate(100%) invert(60%) sepia(90%) saturate(1000%) hue-rotate(5deg);
 }
 
 .mobile-nav-wrapper {

@@ -43,7 +43,7 @@ footer {
 }
 
 .footer-company-info-text {
-	max-width: 420px;
+	max-width: 440px;
 	margin-bottom: 50px;
 	color: var(--black);
 	font-size: 15px;
@@ -97,32 +97,53 @@ footer {
 }
 
 .contact-us-number {
+	display: inline-flex;
+	align-items: baseline;
+	gap: 4px;
 	color: #FFFFFF;
-	font-size: 18px;
-	font-family: 'Lato', sans-serif;
-	line-height: 1.5;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 1.35;
 	text-decoration: none;
+	transition: color 0.25s ease, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-us-number:hover {
+	color: #FFD00E;
+	transform: translateX(4px);
 }
 
 .contact-us-number-bold {
 	font-weight: 700;
-	font-size: 22px;
-	font-family: 'Lato', sans-serif;
+	font-size: 23px;
 	line-height: 1.25;
 }
 
+.contact-us-ext {
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 1.25;
+	opacity: 0.95;
+}
+
 .contact-us-email {
+	display: inline-block;
 	color: #FFFFFF;
+	font-weight: 400;
 	font-size: 20px;
-	line-height: 1.5;
+	line-height: 1.35;
 	text-decoration: none;
+	transition: color 0.25s ease, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-us-email:hover {
+	color: #FFD00E;
+	transform: translateX(4px);
 }
 
 .contact-us-email-bold {
 	font-weight: 700;
-	font-size: 22px;
-	font-family: 'Lato', sans-serif;
-	line-height: 1.5;
+	font-size: 21px;
 }
 
 .contact-us-social-medias {
@@ -211,19 +232,21 @@ footer {
 }
 
 .our-addres-gps {
-	color: #CCCCCC;
+	color: #FFFFFF;
 	font-size: 16px;
 	line-height: 1.5;
 }
 
 .our-addres-gps-link {
-	color: var(--yellow);
+	color: #FFFFFF;
 	font-weight: 600;
-	text-decoration: none;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	transition: color 0.2s ease;
 }
 
 .our-addres-gps-link:hover {
-	text-decoration: underline;
+	color: #FFD00E;
 }
 
 .our-startups {
