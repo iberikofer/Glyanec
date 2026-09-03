@@ -15,7 +15,8 @@
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	padding: 30px 0 40px;
+	padding-top: 30px;
+	padding-bottom: 40px;
 }
 
 .hero-left {

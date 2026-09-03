@@ -9,15 +9,14 @@
 	position: relative;
 	box-sizing: border-box;
 	width: 100%;
-	max-width: 1240px;
+	max-width: 1920px;
 	margin: 0 auto;
-	padding: 0 clamp(20px, 3vw, 40px);
+	padding: 0 clamp(20px, 4.2vw, 80px);
 }
 
 @media (min-width: 1920px) {
 	.container {
-		max-width: 1440px;
-		padding: 0 40px;
+		padding: 0 80px;
 	}
 }
 
@@ -26,7 +25,8 @@
 		display: none;
 	}
 
-	h2 {
+	h2,
+	h3 {
 		text-align: center;
 	}
 }

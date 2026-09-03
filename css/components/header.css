@@ -20,18 +20,7 @@ header {
 	gap: clamp(24px, 3vw, 45px);
 	align-items: center;
 	justify-content: space-between;
-	box-sizing: border-box;
 	width: 100%;
-	max-width: 1240px;
-	margin: 0 auto;
-	padding: 0 clamp(20px, 3vw, 40px);
-}
-
-@media (min-width: 1920px) {
-	.header-container {
-		max-width: 1440px;
-		padding: 0 40px;
-	}
 }
 
 .logo-link {

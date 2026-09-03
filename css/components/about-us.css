@@ -15,7 +15,7 @@
 
 .about-us-heading {
 	font-weight: 800;
-	font-size: clamp(28px, 3.5vw, 44px);
+	font-size: clamp(22px, 2.5vw, 32px);
 	line-height: 1.25;
 }
 
@@ -78,16 +78,16 @@
 
 @media (min-width: 1920px) {
 	.about-us-container {
-		max-width: 1760px;
+		width: 100%;
 	}
 
 	.about-us-main-layout {
 		position: relative;
 		display: grid;
-		grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-		min-height: 750px;
+		grid-template-columns: 1fr 1fr;
+		min-height: 740px;
 		width: 100%;
-		margin: 30px auto 60px;
+		margin: 30px 0 60px;
 	}
 
 	.about-us-center-graphic {
@@ -100,9 +100,9 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 671px;
+		width: 672px;
 		max-width: none;
-		height: 591px;
+		height: 592px;
 		transform: translate(-50%, -50%);
 		pointer-events: none;
 	}
@@ -118,8 +118,8 @@
 		grid-column: 1;
 		grid-row: 1;
 		display: grid;
-		grid-template-rows: repeat(5, 1fr);
-		height: 720px;
+		grid-template-rows: repeat(5, 148px);
+		height: 740px;
 		gap: 0;
 		width: 100%;
 		justify-items: end;
@@ -130,8 +130,8 @@
 		grid-column: 2;
 		grid-row: 1;
 		display: grid;
-		grid-template-rows: repeat(5, 1fr);
-		height: 720px;
+		grid-template-rows: repeat(5, 148px);
+		height: 740px;
 		gap: 0;
 		width: 100%;
 		justify-items: start;
@@ -180,39 +180,39 @@
 	}
 
 	.prospects-text {
-		max-width: none;
+		max-width: 380px;
 	}
 
 	.about-us-left-list .about-us-prospects-list-item:nth-child(1) {
-		margin-right: 120px;
+		margin-right: 124px;
 	}
 	.about-us-left-list .about-us-prospects-list-item:nth-child(2) {
-		margin-right: 280px;
+		margin-right: 257px;
 	}
 	.about-us-left-list .about-us-prospects-list-item:nth-child(3) {
-		margin-right: 310px;
+		margin-right: 292px;
 	}
 	.about-us-left-list .about-us-prospects-list-item:nth-child(4) {
-		margin-right: 280px;
+		margin-right: 257px;
 	}
 	.about-us-left-list .about-us-prospects-list-item:nth-child(5) {
-		margin-right: 120px;
+		margin-right: 124px;
 	}
 
 	.about-us-right-list .about-us-prospects-list-item:nth-child(1) {
-		margin-left: 120px;
+		margin-left: 124px;
 	}
 	.about-us-right-list .about-us-prospects-list-item:nth-child(2) {
-		margin-left: 280px;
+		margin-left: 257px;
 	}
 	.about-us-right-list .about-us-prospects-list-item:nth-child(3) {
-		margin-left: 310px;
+		margin-left: 292px;
 	}
 	.about-us-right-list .about-us-prospects-list-item:nth-child(4) {
-		margin-left: 280px;
+		margin-left: 257px;
 	}
 	.about-us-right-list .about-us-prospects-list-item:nth-child(5) {
-		margin-left: 120px;
+		margin-left: 124px;
 	}
 }
 
