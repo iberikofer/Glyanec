@@ -1,0 +1,115 @@
+/* ==========================================================================
+   OUR COMPANY
+   ========================================================================== */
+
+.our-company {
+	padding: 60px 0;
+	background-color: var(--yellow);
+}
+
+.our-company-content {
+	display: flex;
+	gap: 40px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.our-company-left {
+	flex: 1 1 55%;
+}
+
+.our-company-right {
+	display: flex;
+	flex: 1 1 45%;
+	justify-content: flex-end;
+}
+
+.our-company-heading {
+	margin-bottom: 24px;
+	font-weight: 800;
+	font-size: clamp(28px, 3.5vw, 44px);
+	line-height: 1.25;
+}
+
+.our-company-brands {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	align-items: center;
+}
+
+.our-company-description {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	margin-bottom: 32px;
+}
+
+.our-company-subtitle {
+	color: var(--black);
+	font-weight: 700;
+	font-size: clamp(17px, 1.4vw, 20px);
+	line-height: 1.35;
+}
+
+.our-company-paragraph {
+	color: #333333;
+	font-size: clamp(14px, 1.1vw, 16px);
+	line-height: 1.5;
+}
+
+.our-company-highlight {
+	color: var(--black);
+	font-weight: 700;
+	font-size: clamp(15px, 1.2vw, 17px);
+	line-height: 1.4;
+}
+
+.alternative-commerce-icon {
+	width: 219px;
+	height: 66px;
+	object-fit: contain;
+}
+
+.helpdesk-star-icon {
+	width: 206px;
+	height: 35px;
+	object-fit: contain;
+}
+
+.our-company-group-img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+
+/* ==========================================================================
+   OUR COMPANY RESPONSIVE
+   ========================================================================== */
+
+/* Tablets & Small Laptops (<= 1200px) */
+@media (max-width: 1200px) {
+	.our-company-content {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.our-company-left,
+	.our-company-right {
+		flex: 1 1 100%;
+		justify-content: center;
+	}
+
+	.our-company-brands {
+		justify-content: center;
+	}
+}
+
+/* Small mobile devices (<= 480px) */
+@media (max-width: 480px) {
+	.our-company-brands {
+		flex-direction: column;
+		gap: 20px;
+	}
+}

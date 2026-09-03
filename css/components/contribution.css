@@ -1,0 +1,44 @@
+/* ==========================================================================
+   CONTRIBUTION
+   ========================================================================== */
+
+.contribution {
+	padding-bottom: 100px;
+}
+
+.contribution-heading {
+	margin-bottom: 40px;
+	font-weight: 800;
+	font-size: clamp(28px, 3.5vw, 44px);
+	line-height: 1.25;
+}
+
+.contribution-list {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: clamp(16px, 2vw, 30px);
+}
+
+.contribution-list img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contribution-list img:hover {
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+	transform: translateY(-4px);
+}
+
+/* ==========================================================================
+   CONTRIBUTION RESPONSIVE
+   ========================================================================== */
+
+/* Mobile phones (<= 768px) */
+@media (max-width: 768px) {
+	.contribution-list {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+}

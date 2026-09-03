@@ -1,0 +1,48 @@
+.page-wrapper {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	overflow-x: clip;
+}
+
+.container {
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 0 clamp(20px, 3vw, 40px);
+}
+
+@media (min-width: 1920px) {
+	.container {
+		max-width: 1440px;
+		padding: 0 40px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.desktop-br {
+		display: none;
+	}
+
+	h2 {
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 0 16px;
+	}
+
+	.test-assignment,
+	.our-company,
+	.about-us,
+	.contribution,
+	.cooperation-companies,
+	.charity {
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+}
