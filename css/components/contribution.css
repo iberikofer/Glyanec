@@ -17,18 +17,103 @@
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 	gap: clamp(16px, 2vw, 30px);
+	align-items: stretch;
 }
 
-.contribution-list img {
-	width: 100%;
-	height: auto;
+.contribution-card {
+	position: relative;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	border: 1px solid #EBEBEB;
 	border-radius: 8px;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	padding: clamp(20px, 1.8vw, 24px) clamp(20px, 2vw, 32px) clamp(22px, 2vw, 28px);
+	display: flex;
+	flex-direction: column;
+	transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+	z-index: 1;
 }
 
-.contribution-list img:hover {
-	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+.contribution-card:hover {
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 	transform: translateY(-4px);
+}
+
+.contribution-card--highlighted {
+	background-color: #FFFBE6;
+	border-color: #F2E8BE;
+}
+
+/* Decorative pale yellow circle on the right side */
+.contribution-card::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(68%, -50%);
+	width: clamp(280px, 24vw, 360px);
+	height: clamp(280px, 24vw, 360px);
+	border-radius: 50%;
+	background-color: #FFFBE6;
+	pointer-events: none;
+	z-index: 0;
+}
+
+.contribution-card--highlighted::after {
+	display: none;
+}
+
+.contribution-card-header {
+	position: relative;
+	z-index: 1;
+	height: 46px;
+	display: flex;
+	align-items: center;
+	margin-bottom: clamp(18px, 1.8vw, 24px);
+}
+
+.contribution-card-logo {
+	height: 42px;
+	width: auto;
+	max-width: 100%;
+	object-fit: contain;
+	display: block;
+}
+
+.contribution-card-title {
+	position: relative;
+	z-index: 1;
+	font-weight: 700;
+	font-size: clamp(16px, 1.25vw, 19px);
+	line-height: 1.35;
+	color: var(--black, #333333);
+	margin-bottom: clamp(12px, 1.1vw, 16px);
+}
+
+.contribution-card-text {
+	position: relative;
+	z-index: 1;
+	font-weight: 400;
+	font-size: clamp(12.5px, 0.85vw, 14px);
+	line-height: 1.48;
+	color: var(--black, #333333);
+}
+
+.contribution-card-text strong,
+.contribution-card-text b {
+	font-weight: 700;
+	color: var(--black, #333333);
+}
+
+@media (min-width: 992px) {
+	.contribution-card-text .desktop-br {
+		display: inline;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.contribution-card-text .desktop-br {
+		display: none;
+	}
 }
 
 /* ==========================================================================
@@ -40,5 +125,39 @@
 	.contribution-list {
 		grid-template-columns: 1fr;
 		gap: 20px;
+	}
+
+	.contribution-card::after {
+		right: 0;
+		transform: translate(68%, -50%);
+		width: clamp(240px, 50vw, 320px);
+		height: clamp(240px, 50vw, 320px);
+	}
+}
+
+@media (max-width: 480px) {
+	.contribution {
+		padding-bottom: 60px;
+	}
+
+	.contribution-heading {
+		margin-bottom: 24px;
+	}
+
+	.contribution-card {
+		padding: 20px 18px 22px;
+	}
+
+	.contribution-card-header {
+		margin-bottom: 16px;
+	}
+
+	.contribution-card-title {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	.contribution-card-text {
+		font-size: 12.5px;
 	}
 }
