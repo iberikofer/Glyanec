@@ -1,19 +1,13 @@
-/* ==========================================================================
-   GLYANEC - MAIN STYLESHEET MANIFEST
-   ========================================================================== */
+@import "./base/variables.css";
+@import "./base/reset.css";
+@import "./base/layout.css";
 
-/* Base & Layout */
-@import './base/variables.css';
-@import './base/reset.css';
-@import './base/layout.css';
-
-/* Components & Sections */
-@import './components/header.css';
-@import './components/hero.css';
-@import './components/test-assignment.css';
-@import './components/our-company.css';
-@import './components/about-us.css';
-@import './components/contribution.css';
-@import './components/cooperation.css';
-@import './components/charity.css';
-@import './components/footer.css';
+@import "./components/header.css";
+@import "./components/hero.css";
+@import "./components/test-assignment.css";
+@import "./components/our-company.css";
+@import "./components/about-us.css";
+@import "./components/contribution.css";
+@import "./components/cooperation.css";
+@import "./components/charity.css";
+@import "./components/footer.css";

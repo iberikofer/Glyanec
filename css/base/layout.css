@@ -1,49 +1,49 @@
 .page-wrapper {
-	position: relative;
-	width: 100%;
-	margin: 0 auto;
-	overflow-x: clip;
-	background-color: var(--site-bg, #FFFEFB);
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: clip;
+  background-color: var(--site-bg, #fffefb);
 }
 
 .container {
-	position: relative;
-	box-sizing: border-box;
-	width: 100%;
-	max-width: 1920px;
-	margin: 0 auto;
-	padding: 0 clamp(20px, 4.2vw, 80px);
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4.2vw, 80px);
 }
 
 @media (min-width: 1920px) {
-	.container {
-		padding: 0 80px;
-	}
+  .container {
+    padding: 0 80px;
+  }
 }
 
 @media (max-width: 1200px) {
-	.desktop-br {
-		display: none;
-	}
+  .desktop-br {
+    display: none;
+  }
 
-	h2,
-	h3 {
-		text-align: center;
-	}
+  h2,
+  h3 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
-	.container {
-		padding: 0 16px;
-	}
+  .container {
+    padding: 0 16px;
+  }
 
-	.test-assignment,
-	.our-company,
-	.about-us,
-	.contribution,
-	.cooperation-companies,
-	.charity {
-		padding-top: 40px;
-		padding-bottom: 50px;
-	}
+  .test-assignment,
+  .our-company,
+  .about-us,
+  .contribution,
+  .cooperation-companies,
+  .charity {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
 }

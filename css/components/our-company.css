@@ -1,115 +1,105 @@
-/* ==========================================================================
-   OUR COMPANY
-   ========================================================================== */
-
 .our-company {
-	padding: 60px 0;
-	background: linear-gradient(114deg, #FFDF00 0%, #FFB800 100%);
+  padding: 60px 0;
+  background: linear-gradient(114deg, #ffdf00 0%, #ffb800 100%);
 }
 
 .our-company-content {
-	display: flex;
-	gap: 40px;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .our-company-left {
-	flex: 1 1 55%;
+  flex: 1 1 55%;
 }
 
 .our-company-right {
-	display: flex;
-	flex: 1 1 45%;
-	justify-content: flex-end;
+  display: flex;
+  flex: 1 1 45%;
+  justify-content: flex-end;
 }
 
 .our-company-heading {
-	margin-bottom: 24px;
-	font-weight: 800;
-	font-size: clamp(22px, 2.5vw, 32px);
-	line-height: 1.25;
+  margin-bottom: 24px;
+  font-weight: 800;
+  font-size: clamp(22px, 2.5vw, 32px);
+  line-height: 1.25;
 }
 
 .our-company-brands {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 40px;
-	align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
 }
 
 .our-company-description {
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-	margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
 }
 
 .our-company-subtitle {
-	color: var(--black);
-	font-weight: 700;
-	font-size: clamp(20px, 1.8vw, 26px);
-	line-height: 1.35;
+  color: var(--black);
+  font-weight: 700;
+  font-size: clamp(20px, 1.8vw, 26px);
+  line-height: 1.35;
 }
 
 .our-company-paragraph {
-	color: #333333;
-	font-size: clamp(16px, 1.3vw, 20px);
-	line-height: 1.55;
+  color: #333333;
+  font-size: clamp(16px, 1.3vw, 20px);
+  line-height: 1.55;
 }
 
 .our-company-highlight {
-	color: var(--black);
-	font-weight: 700;
-	font-size: clamp(16px, 1.3vw, 20px);
-	line-height: 1.45;
+  color: var(--black);
+  font-weight: 700;
+  font-size: clamp(16px, 1.3vw, 20px);
+  line-height: 1.45;
 }
 
 .alternative-commerce-icon {
-	width: 219px;
-	height: 66px;
-	object-fit: contain;
+  width: 219px;
+  height: 66px;
+  object-fit: contain;
 }
 
 .helpdesk-star-icon {
-	width: 206px;
-	height: 35px;
-	object-fit: contain;
+  width: 206px;
+  height: 35px;
+  object-fit: contain;
 }
 
 .our-company-group-img {
-	max-width: 100%;
-	height: auto;
-	border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-/* ==========================================================================
-   OUR COMPANY RESPONSIVE
-   ========================================================================== */
-
-/* Tablets & Small Laptops (<= 1200px) */
 @media (max-width: 1200px) {
-	.our-company-content {
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	}
+  .our-company-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-	.our-company-left,
-	.our-company-right {
-		flex: 1 1 100%;
-		justify-content: center;
-	}
+  .our-company-left,
+  .our-company-right {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
 
-	.our-company-brands {
-		justify-content: center;
-	}
+  .our-company-brands {
+    justify-content: center;
+  }
 }
 
-/* Small mobile devices (<= 480px) */
 @media (max-width: 480px) {
-	.our-company-brands {
-		flex-direction: column;
-		gap: 20px;
-	}
+  .our-company-brands {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
